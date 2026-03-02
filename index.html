@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <title>LoL Auto Accept</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="info-wrapper">
+        <img src="assets/logo.png" class="logo" />
+        <span class="info-icon">?
+          <span class="info-tooltip">Automatically accepts the queue pop after 10 seconds — click "disable" if you don't want to accept.</span>
+        </span>
+      </div>
+      <div class="status-group">
+        <p id="status">Status: Disconnected</p>
+        <p id="auto-accept-status" class="enabled">Auto Accept: Enabled</p>
+      </div>
+      <button id="toggle" class="enabled">Disable Auto-accept</button>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
